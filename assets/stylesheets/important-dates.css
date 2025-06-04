@@ -7,10 +7,10 @@
 }
 
 .timeline::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 2px;
-    background: #3EB2E4;
+    background: #3eb2e4;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -33,14 +33,14 @@
 }
 
 .container-custom::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 16px;
     height: 16px;
     top: calc(50% - 8px);
     right: -8px;
     background: #ffffff;
-    border: 2px solid #3EB2E4;
+    border: 2px solid #3eb2e4;
     border-radius: 16px;
     z-index: 1;
 }
@@ -50,13 +50,13 @@
 }
 
 .container-custom::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 50px;
     height: 2px;
     top: calc(50% - 1px);
     right: 8px;
-    background: #3EB2E4;
+    background: #3eb2e4;
     z-index: 1;
 }
 
@@ -78,11 +78,11 @@
 }
 
 .container-custom.left .date {
-    right: -95px;
+    right: -203px;
 }
 
 .container-custom.right .date {
-    left: -95px;
+    left: -130px;
 }
 
 .container-custom .icon {
@@ -92,7 +92,7 @@
     height: 40px;
     padding: 9px 0;
     top: calc(50% - 20px);
-    background: #3EB2E4;
+    background: #3eb2e4;
     border: 2px solid black;
     border-radius: 40px;
     text-align: center;
@@ -111,7 +111,7 @@
 
 .container-custom .content {
     padding: 30px 90px 30px 30px;
-    background: #3EB2E4;
+    background: #3eb2e4;
     position: relative;
     border-radius: 0 500px 500px 0;
 }
@@ -120,7 +120,7 @@
     padding: 30px 30px 30px 90px;
     border-radius: 500px 0 0 500px;
 }
-.landPage h1{
+.landPage h1 {
     color: rgb(0, 0, 0);
     padding-top: 50px;
     padding-bottom: 50px;
@@ -163,7 +163,7 @@
     .container-custom.left::before,
     .container-custom.right::before {
         left: 100px;
-        border-color: transparent #006E51 transparent transparent;
+        border-color: transparent #006e51 transparent transparent;
     }
 
     .container-custom.left .date,
@@ -216,7 +216,7 @@ body {
     /* Remove borders */
     outline: none;
     /* Remove outline */
-    background-color: #3EB2E4;
+    background-color: #3eb2e4;
     /* Set a background color */
     color: white;
     /* Text color */
