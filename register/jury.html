@@ -1,181 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jury Member Registration</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jury Member Registration</title>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../assets/stylesheets/navbar.css" />
+        <link rel="stylesheet" href="../assets/stylesheets/footer.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../assets/stylesheets/navbar.css">
-    <link rel="stylesheet" href="../assets/stylesheets/footer.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            body {
+                background-image: url(../assets/images/backgroundImage.png);
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center center;
+            }
 
-    <style>
-        body {
-            background-image: url(../assets/images/backgroundImage.png);
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center center;
-        }
-
-        .container {
-            max-width: 600px;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 51, 102, 0.2);
-        }
-
-        h2 {
-            text-align: center;
-            color: #003366;
-            margin-bottom: 30px;
-            font-weight: bold;
-        }
-
-        .form input {
-            margin-bottom: 20px;
-            width: 100%;
-            padding: 12px;
-            border-radius: 10px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-        }
-
-        .form button {
-            width: 100%;
-            padding: 12px;
-            background-color: #0055a5;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-size: 18px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .form button:hover {
-            background-color: #003f7f;
-        }
-
-        @media (max-width: 768px) {
             .container {
-                margin: 30px 20px;
-                padding: 20px;
+                max-width: 600px;
+                background: rgba(255, 255, 255, 0.95);
+                padding: 40px;
+                border-radius: 15px;
+                box-shadow: 0 0 20px rgba(0, 51, 102, 0.2);
             }
 
             h2 {
-                font-size: 22px;
+                text-align: center;
+                color: #003366;
+                margin-bottom: 30px;
+                font-weight: bold;
             }
-        }
-    </style>
-</head>
 
-<body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../assets/images/namami_gange.png" alt="Government of India Logo"
-                    style="height: 70px; object-fit: contain; padding-left:30px">
-                <span style="height: 65px; border-left: 2px solid white; margin: 0 15px;"></span>
-                <img src="../assets/images/riverathon_logo.png" alt="Namami Gange Logo"
-                    style="height: 50px; object-fit: contain; padding-left:30px;">
-                <span style="height: 65px; border-left: 2px solid white; margin: 0 15px;"></span>
-                <img src="../assets/images/amity_logo.png" alt="Riverathon Logo"
-                    style="height: 60px; object-fit: contain; padding-left:30px;">
-            </a>
+            .form input {
+                margin-bottom: 20px;
+                width: 100%;
+                padding: 12px;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+                font-size: 16px;
+            }
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#what">About Riverathon</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="../about/about-nmgc.html">About NMGC</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="../about/about-amity.html">About Amity University</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../important-links/problem-statements.html">Problem Statements</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Important Links</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../important-links/important-dates.html">Timeline</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="../important-links/guidelines.html">Rules &
-                                    Guidelines</a></li>
-                        </ul>
-                    </li>
-                                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Apply
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../register/jury.html">Become a Jury Member</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="../register/mentor.html">Become a Mentor</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="register.html"><button id="registerNavBtn" aria-label="Register Now">Register
-                                Now!</button></a>
-                    </li>
-                </ul>
+            .form button {
+                width: 100%;
+                padding: 12px;
+                background-color: #0055a5;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+            }
+
+            .form button:hover {
+                background-color: #003f7f;
+            }
+
+            @media (max-width: 768px) {
+                .container {
+                    margin: 30px 20px;
+                    padding: 20px;
+                }
+
+                h2 {
+                    font-size: 22px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img
+                        src="../assets/images/namami_gange.png"
+                        alt="Government of India Logo"
+                        style="
+                            height: 70px;
+                            object-fit: contain;
+                            padding-left: 30px;
+                        "
+                    />
+                    <span
+                        style="
+                            height: 65px;
+                            border-left: 2px solid white;
+                            margin: 0 15px;
+                        "
+                    ></span>
+                    <img
+                        src="../assets/images/riverathon_logo.png"
+                        alt="Namami Gange Logo"
+                        style="
+                            height: 50px;
+                            object-fit: contain;
+                            padding-left: 30px;
+                        "
+                    />
+                    <span
+                        style="
+                            height: 65px;
+                            border-left: 2px solid white;
+                            margin: 0 15px;
+                        "
+                    ></span>
+                    <img
+                        src="../assets/images/amity_logo.png"
+                        alt="Riverathon Logo"
+                        style="
+                            height: 60px;
+                            object-fit: contain;
+                            padding-left: 30px;
+                        "
+                    />
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                data-bs-toggle="dropdown"
+                                >About</a
+                            >
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#what"
+                                        >About Riverathon</a
+                                    >
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="../about/about-nmgc.html"
+                                        >About NMGC</a
+                                    >
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="../about/about-amity.html"
+                                        >About Amity University</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="../important-links/problem-statements.html"
+                                >Problem Statements</a
+                            >
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                data-bs-toggle="dropdown"
+                                >Important Links</a
+                            >
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="../important-links/important-dates.html"
+                                        >Timeline</a
+                                    >
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="../important-links/guidelines.html"
+                                        >Rules & Guidelines</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Apply
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="../register/jury.html"
+                                        >Become a Jury Member</a
+                                    >
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="../register/mentor.html"
+                                        >Become a Mentor</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="register.html"
+                                ><button
+                                    id="registerNavBtn"
+                                    aria-label="Register Now"
+                                >
+                                    Register Now!
+                                </button></a
+                            >
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+
+        <div class="container mt-5 mb-5">
+            <h2>JURY MEMBER REGISTRATION FORM</h2>
+            <form
+                id="juryForm"
+                class="form"
+                onsubmit="return validateJuryForm()"
+            >
+                <input
+                    type="text"
+                    id="jury-name"
+                    name="name"
+                    placeholder="Name of Jury Member"
+                    required
+                />
+                <input
+                    type="text"
+                    id="jury-designation"
+                    name="designation"
+                    placeholder="Designation"
+                    required
+                />
+                <input
+                    type="text"
+                    id="jury-org"
+                    name="organization"
+                    placeholder="Organization"
+                    required
+                />
+                <input
+                    type="email"
+                    id="jury-email"
+                    name="email"
+                    placeholder="Email ID"
+                    required
+                />
+                <input
+                    type="tel"
+                    id="jury-phone"
+                    name="phone"
+                    placeholder="Phone Number"
+                    pattern="[0-9]{10}"
+                    required
+                />
+                <button type="submit">Submit</button>
+            </form>
         </div>
-    </nav>
-
-    <div class="container mt-5 mb-5">
-        <h2>JURY MEMBER REGISTRATION FORM</h2>
-        <form class="form" onsubmit="return validateJuryForm()" action="thankyou-jury.html" method="get">
-            <input type="text" id="jury-name" placeholder="Name of Jury Member" required />
-            <input type="text" id="jury-designation" placeholder="Designation" required />
-            <input type="text" id="jury-org" placeholder="Organization" required />
-            <input type="email" id="jury-email" placeholder="Email ID" required />
-            <input type="tel" id="jury-phone" placeholder="Phone Number" pattern="[0-9]{10}" required />
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    <footer>
-        <p><strong>© 2025 Amity University. All rights reserved</strong></p>
-    </footer>
-    <script>
-        function validateJuryForm() {
-            const phone = document.getElementById("jury-phone").value;
-            if (!/^\d{10}$/.test(phone)) {
-                alert("Phone number must be 10 digits");
-                return false;
+        <footer>
+            <p><strong>© 2025 Amity University. All rights reserved</strong></p>
+        </footer>
+        <script>
+            function validateJuryForm() {
+                const phone = document.getElementById("jury-phone").value;
+                if (!/^\d{10}$/.test(phone)) {
+                    alert("Phone number must be 10 digits");
+                    return false;
+                }
+                return true;
             }
-            return true;
-        }
-    </script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-</body>
+        </script>
 
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
