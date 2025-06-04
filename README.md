@@ -1,9 +1,16 @@
-# Riverathon 1.0
+<div align="justify">
 
-Riverathon 1.0 is the flagship hackathon organized under the Namami Gange Programme and hosted by Amity School of Engineering & Technology, Noida, in collaboration with the National Mission for Clean Ganga (NMCG). It is the first-ever hackathon on rivers using LiDAR data provided by the Survey of India, aiming to unite engineers, environmental scientists, data analysts, and innovators to develop sustainable river restoration solutions. The initiative encourages a multi-disciplinary approach that combines technology, policy, and community-driven efforts to achieve the United Nations’ Sustainable Development Goals (SDGs), especially in water conservation, climate resilience, and ecosystem sustainability. Participants will work on challenges such as floodplain mapping, sediment management, biodiversity mapping, disaster management, digital twin modeling, and more. Open to students and researchers across India, the hackathon consists of five key phases: Ideation, Screening, Mentorship, Development, and the Grand Finale. Judging criteria emphasize innovation, technical implementation, environmental impact, and clarity. Winning teams will be awarded cash prizes up to ₹3.5 lakhs and may receive mentorship or funding opportunities. The event is supported by a Joint Interface Committee comprising experts from NMCG, ISRO, IITs, and Amity University.
+**Riverathon 1.0** is a national-level hackathon organized by Amity School of Engineering & Technology, Noida, in collaboration with the National Mission for Clean Ganga (NMCG) under the Namami Gange Programme. It is India’s first hackathon focused on river systems using LiDAR data from the Survey of India.
+
+The event unites students, researchers, and professionals to create tech-driven solutions for sustainable river restoration. Challenge areas include floodplain mapping, sediment and biodiversity management, disaster response, and digital twin modeling—aligned with UN Sustainable Development Goals (SDGs).
+
+The hackathon has five stages: Ideation, Screening, Mentorship, Development, and Grand Finale. Projects will be judged on innovation, technical depth, environmental impact, and clarity.
+
+Prizes worth ₹3.5 lakhs and mentorship opportunities are up for grabs. The event is supported by experts from NMCG, ISRO, IITs, and Amity University.
+
+</div>
 
 ## Contributors
-
-- Rajat Rajput
-- Pranav Pathak
+- Rajat Rajput  
+- Pranav Pathak  
 - Shlok Bhardwaj
