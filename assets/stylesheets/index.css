@@ -433,3 +433,256 @@ footer {
     color: inherit;
     font-family: inherit;
 }
+.prizes-section {
+    background: linear-gradient(
+        135deg,
+        #f2f6ff,
+        #fcf4ee
+    ); /* A serene, inviting gradient */
+    padding: 7rem 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Subtle animated background */
+.prizes-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/abstract-geometric-bg.svg") repeat; /* Replace with your SVG */
+    opacity: 0.06;
+    z-index: 0;
+    pointer-events: none;
+    animation: subtleZoom 60s linear infinite; /* Add a subtle zoom animation */
+}
+
+@keyframes subtleZoom {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.prizes-section .container {
+    max-width: 1250px;
+    position: relative;
+    z-index: 1;
+}
+
+.prizes-section h2 {
+    font-family: "Nunito Sans", sans-serif; /* A balanced, modern font */
+    font-size: 3.75rem;
+    font-weight: 800;
+    color: #2c3e50;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2.2rem;
+    text-align: center;
+    letter-spacing: -1.5px;
+}
+
+.prizes-section p {
+    font-family: "Roboto", sans-serif; /* A highly readable font */
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 4.5rem;
+    text-align: center;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.prize-card {
+    background-color: #fff;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.16); /* Refined shadow */
+    transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1),
+        box-shadow 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.prize-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.prize-card .card-body {
+    padding: 4.5rem;
+    text-align: center;
+}
+
+.prize-card .card-title {
+    font-family: "Poppins", sans-serif; /* A versatile, stylish font */
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #34495e;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1.4rem;
+}
+
+.prize-card .card-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 6px;
+    width: 80px;
+    background-color: #f1c40f; /* A vibrant, attention-grabbing accent */
+    border-radius: 4px;
+}
+
+.prize-card .card-subtitle {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    color: #777;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.prize-card .card-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 1.9;
+}
+
+/* Dynamic Ribbon Styling */
+.prize-card::before {
+    content: "Exclusive";
+    position: absolute;
+    top: 16px;
+    right: -38px;
+    background-color: #8e44ad; /* A sophisticated, eye-catching color */
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.8rem 4.5rem;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.18);
+    z-index: 2;
+}
+
+/* Media Queries - Optimized Responsiveness */
+@media (max-width: 1400px) {
+    .prizes-section h2 {
+        font-size: 3.5rem;
+    }
+
+    .prizes-section p {
+        font-size: 1.3rem;
+    }
+
+    .prize-card .card-body {
+        padding: 4rem;
+    }
+
+    .prize-card .card-title {
+        font-size: 2.2rem;
+    }
+
+    .prize-card .card-text {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .prizes-section h2 {
+        font-size: 3.25rem;
+    }
+
+    .prizes-section p {
+        font-size: 1.2rem;
+    }
+
+    .prize-card .card-body {
+        padding: 3.5rem;
+    }
+
+    .prize-card .card-title {
+        font-size: 2rem;
+    }
+
+    .prize-card .card-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .prizes-section h2 {
+        font-size: 3rem;
+    }
+
+    .prizes-section p {
+        font-size: 1.1rem;
+    }
+
+    .prize-card .card-body {
+        padding: 3rem;
+    }
+
+    .prize-card .card-title {
+        font-size: 1.8rem;
+    }
+
+    .prize-card .card-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .prizes-section h2 {
+        font-size: 2.75rem;
+    }
+
+    .prizes-section p {
+        font-size: 1rem;
+    }
+
+    .prize-card .card-body {
+        padding: 2.5rem;
+    }
+
+    .prize-card .card-title {
+        font-size: 1.6rem;
+    }
+
+    .prize-card .card-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .prizes-section h2 {
+        font-size: 2.4rem;
+    }
+
+    .prizes-section p {
+        font-size: 0.9rem;
+    }
+
+    .prize-card .card-body {
+        padding: 2rem;
+    }
+
+    .prize-card .card-title {
+        font-size: 1.4rem;
+    }
+
+    .prize-card .card-text {
+        font-size: 0.9rem;
+    }
+}
